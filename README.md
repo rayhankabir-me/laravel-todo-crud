@@ -19,6 +19,18 @@ now run the command: php artisan serve <strong>(Step 5)</strong> <br />
 ## In the Welcome Page, you will find "Todo App" Menu Item:
 <img width="1457" alt="image" src="https://github.com/user-attachments/assets/d9abb6dd-b437-4a33-9c30-7d517c85aa9c">
 
+## Inside "Todo App" Menu Item, You will see todo listings:
+<img width="1457" alt="image" src="https://github.com/user-attachments/assets/b6a8ed09-2cb9-4c70-a70f-e26f97aa8791">
+
+## You Can Create, Delete, Update, View Todo:
+<img width="1426" alt="image" src="https://github.com/user-attachments/assets/1d99a8f2-4a25-486e-9ccd-a8e1da558f39">
+<img width="1325" alt="image" src="https://github.com/user-attachments/assets/0f693211-a1b3-48bb-a13d-6a98b6a0d3ac">
+<img width="1484" alt="image" src="https://github.com/user-attachments/assets/476bed3a-a4f9-4592-8871-18b0e86a524f">
+<img width="1419" alt="image" src="https://github.com/user-attachments/assets/b4668566-782a-418c-b051-96057f993c61">
+
+
+
+
 
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
