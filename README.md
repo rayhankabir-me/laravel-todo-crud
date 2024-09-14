@@ -16,6 +16,10 @@ and run migration. Command is: php artisan migrate <strong>(Step 3)</strong> <br
 the run the npm for getting css and js. Command: npm run dev <strong>(Step 4)</strong> <br />
 now run the command: php artisan serve <strong>(Step 5)</strong> <br />
 
+## In the Welcome Page, you will find "Todo App" Menu Item:
+<img width="1457" alt="image" src="https://github.com/user-attachments/assets/d9abb6dd-b437-4a33-9c30-7d517c85aa9c">
+
+
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
