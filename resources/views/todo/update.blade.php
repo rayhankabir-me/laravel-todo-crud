@@ -26,7 +26,7 @@
                 <div class="bg-black overflow-hidden shadow-sm sm:rounded-lg">
                     <div class="p-6 text-gray-900">
                         <div>
-                            <h2 class="text-white text-3xl font-bold mb-4">Create Todo</h2>
+                            <h2 class="text-white text-3xl font-bold mb-4">Updated Todo</h2>
                         </div>
 
                         <form class="max-w-full mx-auto" method="post" action="{{route('todos.update')}}">
