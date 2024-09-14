@@ -1,5 +1,21 @@
-## Instruction For PHP OOP Tasks and Laravel Todo Crud
-## PHP OOP Tasks are also in this same folder
+## Documentation For "PHP OOP Tasks" and "Laravel Todo Crud"
+## Note For PHP OOP Tasks:
+PHP OOP Tasks are also in this Same Folder, the folder name is "PHP-OOP-Tasks".
+Now move this folder (PHP-OOP-Tasks) to your htdocs folder.
+Now the paths will be:
+For Task 1: http://localhost/PHP-OOP-Tasks/task-1-class-inheritance/index.php
+For Task 2: http://localhost/PHP-OOP-Tasks/task-2-interface-implementation/index.php
+For Task 3: http://localhost/PHP-OOP-Tasks/task-3-encapsulation/index.php
+For Task 4: http://localhost/PHP-OOP-Tasks/task-4-polymorphism/index.php
+
+## Note For Laravel Todo Crud App:
+I have used laravel breeze for taking advantages of Tailwind CSS.
+So you have to install NPM first. Command is: npm install <strong>(Step 1)</strong>
+Then put your database name in the .env file <strong>(Step 2)</strong>
+and run migration. Command is: php artisan migrate <strong>(Step 3)</strong>
+the run the npm for getting css and js. Command: npm run dev <strong>(Step 4)</strong>
+now run the command: php artisan serve <strong>(Step 5)</strong>
+
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
