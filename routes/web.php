@@ -15,6 +15,7 @@ Route::post('/todos/add', [TodoController::class, 'add'])->name('todos.add');
 Route::get('/todos/details/{id}', [TodoController::class, 'details'])->name('todos.details');
 Route::get('/todos/edit/{id}', [TodoController::class, 'edit'])->name('todos.edit');
 Route::put('/todos/update/', [TodoController::class, 'update'])->name('todos.update');
+Route::delete('/todos/delete', [TodoController::class, 'delete'])->name('todos.delete');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

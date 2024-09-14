@@ -86,4 +86,19 @@ class TodoController extends Controller
         $request->session()->flash('alert-success', 'Todo Updated Successfully...');
         return to_route('todos.index');
     }
+
+    public function delete(Request $request)
+    {
+        $todo = Todos::find($request->todo_id);
+        if (!$todo)
+        {
+            return to_route('todos.index')->withErrors([
+                'error' => "No Todo Found..."
+            ]);
+        }
+
+        $todo->delete();
+        $request->session()->flash('alert-success', 'Todo Deleted Successfully...');
+        return to_route('todos.index');
+    }
 }

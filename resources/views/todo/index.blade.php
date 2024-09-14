@@ -27,6 +27,7 @@
                     <div class="p-6 text-gray-900">
                         <div>
                             <h2 class="text-3xl font-bold mb-4">Todo Lists</h2>
+                            <a class="inline-block mb-5 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" href="{{route('todos.create')}}">Add Todo</a>
                         </div>
                         <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
 
@@ -71,8 +72,7 @@
                                             </td>
                                             <td class="px-6 py-4">
                                                 @if($todo->is_completed == 1)
-                                                    <span class="font-medium text-green-400"></span>
-                                                    <a href="" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Mark As Complete</a>
+                                                    <span class="font-medium text-green-400">Completed</span>
                                                 @else
                                                     <span class="font-medium text-red-400">Incompleted</span>
                                                 @endif
@@ -80,7 +80,9 @@
                                             <td class="flex px-6 py-4">
                                                 <a href="{{route('todos.details', $todo->id)}}" class="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">View</a>
                                                 <a href="{{route('todos.edit', $todo->id)}}" class="focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900">Edit</a>
-                                                <form action="">
+                                                <form action="{{route('todos.delete')}}" method="post">
+                                                    @csrf
+                                                    @method('DELETE')
                                                     <input type="hidden" name="todo_id" value="{{$todo->id}}" />
                                                     <button class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Delete</button>
                                                 </form>
