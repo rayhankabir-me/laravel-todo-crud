@@ -13,6 +13,8 @@ Route::get('/todos', [TodoController::class, 'index'])->name('todos.index');
 Route::get('/todos/create', [TodoController::class, 'create'])->name('todos.create');
 Route::post('/todos/add', [TodoController::class, 'add'])->name('todos.add');
 Route::get('/todos/details/{id}', [TodoController::class, 'details'])->name('todos.details');
+Route::get('/todos/edit/{id}', [TodoController::class, 'edit'])->name('todos.edit');
+Route::put('/todos/update/', [TodoController::class, 'update'])->name('todos.update');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

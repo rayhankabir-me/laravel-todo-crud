@@ -44,11 +44,46 @@ class TodoController extends Controller
         if (!$todo)
         {
             return to_route('todos.index')->withErrors([
-                'error' => "No Todo Found.."
+                'error' => "No Todo Found..."
             ]);
         }
 
         return view('todo.single', ['todo' => $todo]);
 
+    }
+
+    //going to edit page
+    public function edit($id)
+    {
+        $todo = Todos::find($id);
+        if (!$todo)
+        {
+            return to_route('todos.index')->withErrors([
+                'error' => "No Todo Found..."
+            ]);
+        }
+
+        return view('todo.update', ['todo' => $todo]);
+
+    }
+
+    public function update(TodoRequest $request)
+    {
+        $todo = Todos::find($request->todo_id);
+        if (!$todo)
+        {
+            return to_route('todos.index')->withErrors([
+                'error' => "No Todo Found..."
+            ]);
+        }
+
+        $todo->update([
+           'title' => $request->title,
+           'description' => $request->description,
+           'is_completed' => $request->is_completed,
+        ]);
+
+        $request->session()->flash('alert-success', 'Todo Updated Successfully...');
+        return to_route('todos.index');
     }
 }
